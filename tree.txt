@@ -1,0 +1,401 @@
+.
+├── LICENSE
+├── music-client
+│   ├── build
+│   │   ├── build.js
+│   │   ├── check-versions.js
+│   │   ├── utils.js
+│   │   ├── vue-loader.conf.js
+│   │   ├── webpack.base.conf.js
+│   │   ├── webpack.dev.conf.js
+│   │   └── webpack.prod.conf.js
+│   ├── config
+│   │   ├── dev.env.js
+│   │   ├── index.js
+│   │   ├── prod.env.js
+│   │   └── test.env.js
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── README.md
+│   ├── src
+│   │   ├── api
+│   │   │   ├── http.js
+│   │   │   └── index.js
+│   │   ├── App.vue
+│   │   ├── assets
+│   │   │   ├── css
+│   │   │   │   ├── 404.scss
+│   │   │   │   ├── album-content.scss
+│   │   │   │   ├── app.scss
+│   │   │   │   ├── comment.scss
+│   │   │   │   ├── content-list.scss
+│   │   │   │   ├── global.scss
+│   │   │   │   ├── home.scss
+│   │   │   │   ├── index.scss
+│   │   │   │   ├── info.scss
+│   │   │   │   ├── login-in.scss
+│   │   │   │   ├── login-logo.scss
+│   │   │   │   ├── lyric.scss
+│   │   │   │   ├── my-music.scss
+│   │   │   │   ├── play-bar.scss
+│   │   │   │   ├── scroll-top.scss
+│   │   │   │   ├── search.scss
+│   │   │   │   ├── search-song-Lists.scss
+│   │   │   │   ├── search-songs.scss
+│   │   │   │   ├── setting.scss
+│   │   │   │   ├── sign-up.scss
+│   │   │   │   ├── singer-album.scss
+│   │   │   │   ├── singer.scss
+│   │   │   │   ├── song-audio.scss
+│   │   │   │   ├── song-list-album.scss
+│   │   │   │   ├── song-list.scss
+│   │   │   │   ├── swiper.scss
+│   │   │   │   ├── the-aside.scss
+│   │   │   │   ├── the-footer.scss
+│   │   │   │   ├── the-header.scss
+│   │   │   │   ├── upload.scss
+│   │   │   │   └── var.scss
+│   │   │   ├── data
+│   │   │   │   ├── form.js
+│   │   │   │   ├── header.js
+│   │   │   │   ├── singer.js
+│   │   │   │   ├── songList.js
+│   │   │   │   └── swiper.js
+│   │   │   ├── img
+│   │   │   │   ├── swiper
+│   │   │   │   │   ├── 1.jpg
+│   │   │   │   │   ├── 2.jpg
+│   │   │   │   │   ├── 3.jpg
+│   │   │   │   │   ├── 4.jpg
+│   │   │   │   │   ├── 5.jpg
+│   │   │   │   │   ├── 6.jpg
+│   │   │   │   │   ├── 7.jpg
+│   │   │   │   │   └── 8.jpg
+│   │   │   │   ├── tubiao.jpg
+│   │   │   │   └── user.jpg
+│   │   │   └── js
+│   │   │       ├── iconfont1.js
+│   │   │       ├── iconfont2.js
+│   │   │       ├── iconfont3.js
+│   │   │       └── iconfont.js
+│   │   ├── components
+│   │   │   ├── AlbumContent.vue
+│   │   │   ├── Comment.vue
+│   │   │   ├── ContentList.vue
+│   │   │   ├── Info.vue
+│   │   │   ├── LoginLogo.vue
+│   │   │   ├── PlayBar.vue
+│   │   │   ├── ScrollTop.vue
+│   │   │   ├── search
+│   │   │   │   ├── SearchSongLists.vue
+│   │   │   │   └── SearchSongs.vue
+│   │   │   ├── SongAudio.vue
+│   │   │   ├── Swiper.vue
+│   │   │   ├── TheAside.vue
+│   │   │   ├── TheFooter.vue
+│   │   │   ├── TheHeader.vue
+│   │   │   └── Upload.vue
+│   │   ├── main.js
+│   │   ├── mixins
+│   │   │   └── index.js
+│   │   ├── pages
+│   │   │   ├── Home.vue
+│   │   │   ├── LoginIn.vue
+│   │   │   ├── Lyric.vue
+│   │   │   ├── MyMusic.vue
+│   │   │   ├── Search.vue
+│   │   │   ├── Setting.vue
+│   │   │   ├── SignUp.vue
+│   │   │   ├── SingerAlbum.vue
+│   │   │   ├── Singer.vue
+│   │   │   ├── SongListAlbum.vue
+│   │   │   └── SongList.vue
+│   │   ├── router
+│   │   │   └── index.js
+│   │   └── store
+│   │       ├── configure.js
+│   │       ├── index.js
+│   │       ├── song.js
+│   │       └── user.js
+│   ├── static
+│   └── test
+│       ├── e2e
+│       │   ├── custom-assertions
+│       │   │   └── elementCount.js
+│       │   ├── nightwatch.conf.js
+│       │   ├── runner.js
+│       │   └── specs
+│       │       └── test.js
+│       └── unit
+│           ├── jest.conf.js
+│           ├── setup.js
+│           └── specs
+│               └── HelloWorld.spec.js
+├── music-manage
+│   ├── build
+│   │   ├── build.js
+│   │   ├── check-versions.js
+│   │   ├── logo.png
+│   │   ├── utils.js
+│   │   ├── vue-loader.conf.js
+│   │   ├── webpack.base.conf.js
+│   │   ├── webpack.dev.conf.js
+│   │   └── webpack.prod.conf.js
+│   ├── config
+│   │   ├── dev.env.js
+│   │   ├── index.js
+│   │   ├── prod.env.js
+│   │   └── test.env.js
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── README.md
+│   ├── src
+│   │   ├── api
+│   │   │   ├── http.js
+│   │   │   └── index.js
+│   │   ├── App.vue
+│   │   ├── assets
+│   │   │   ├── css
+│   │   │   │   └── main.css
+│   │   │   ├── img
+│   │   │   │   ├── background.jpg
+│   │   │   │   └── user.jpg
+│   │   │   └── js
+│   │   │       ├── bus.js
+│   │   │       └── iconfont.js
+│   │   ├── components
+│   │   │   ├── Home.vue
+│   │   │   ├── SongAudio.vue
+│   │   │   ├── TheAside.vue
+│   │   │   └── TheHeader.vue
+│   │   ├── main.js
+│   │   ├── mixins
+│   │   │   └── index.js
+│   │   ├── pages
+│   │   │   ├── CollectPage.vue
+│   │   │   ├── CommentPage.vue
+│   │   │   ├── ConsumerPage.vue
+│   │   │   ├── InfoPage.vue
+│   │   │   ├── ListSongPage.vue
+│   │   │   ├── Login.vue
+│   │   │   ├── SingerPage.vue
+│   │   │   ├── SongListPage.vue
+│   │   │   └── SongPage.vue
+│   │   ├── router
+│   │   │   └── index.js
+│   │   └── store
+│   │       └── index.js
+│   ├── static
+│   │   └── vuetable.json
+│   └── test
+│       ├── e2e
+│       │   ├── custom-assertions
+│       │   │   └── elementCount.js
+│       │   ├── nightwatch.conf.js
+│       │   ├── runner.js
+│       │   └── specs
+│       │       └── test.js
+│       └── unit
+│           ├── jest.conf.js
+│           ├── setup.js
+│           └── specs
+│               └── HelloWorld.spec.js
+├── music-server
+│   ├── avatorImages
+│   │   ├── 1599695045249╗¬╫╨.jpg
+│   │   ├── 16015143342196.jpg
+│   │   └── 1601515066460╕⌐╬╘│┼.jpg
+│   ├── HELP.md
+│   ├── img
+│   │   ├── singerPic
+│   │   │   ├── 1598707156005╗¬╫╨.jpg
+│   │   │   ├── 1598707239292╗¬╫╨.jpg
+│   │   │   ├── 1598707300057timg.jpg
+│   │   │   ├── 1598791914645│┬▐╚╤╕.jpg
+│   │   │   └── hhh.jpg
+│   │   ├── songListPic
+│   │   │   ├── 123.jpg
+│   │   │   └── 1599312391936│╠╨≥╘│.jpg
+│   │   ├── songPic
+│   │   │   ├── 15990909343357.jpg
+│   │   │   ├── 15991338029974.jpg
+│   │   │   ├── 1599231150357│┬▐╚╤╕.jpg
+│   │   │   └── tubiao.jpg
+│   │   └── user.jpg
+│   ├── music.iml
+│   ├── mvnw
+│   ├── mvnw.cmd
+│   ├── pom.xml
+│   ├── song
+│   │   ├── 1599134158136╘┬╤└╢∙.mp3
+│   │   ├── 1599231114624╩«─Ω.mp3
+│   │   └── 1601387923463╨╟╨╟.mp3
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   └── com
+│   │   │   │       └── javaclimb
+│   │   │   │           └── music
+│   │   │   │               ├── config
+│   │   │   │               │   ├── FileConfig.java
+│   │   │   │               │   └── WebMvcConfig.java
+│   │   │   │               ├── controller
+│   │   │   │               │   ├── AdminController.java
+│   │   │   │               │   ├── CollectController.java
+│   │   │   │               │   ├── CommentController.java
+│   │   │   │               │   ├── ConsumerController.java
+│   │   │   │               │   ├── ListSongController.java
+│   │   │   │               │   ├── RankController.java
+│   │   │   │               │   ├── SingerController.java
+│   │   │   │               │   ├── SongController.java
+│   │   │   │               │   └── SongListController.java
+│   │   │   │               ├── dao
+│   │   │   │               │   ├── AdminMapper.java
+│   │   │   │               │   ├── CollectMapper.java
+│   │   │   │               │   ├── CommentMapper.java
+│   │   │   │               │   ├── ConsumerMapper.java
+│   │   │   │               │   ├── ListSongMapper.java
+│   │   │   │               │   ├── RankMapper.java
+│   │   │   │               │   ├── SingerMapper.java
+│   │   │   │               │   ├── SongListMapper.java
+│   │   │   │               │   └── SongMapper.java
+│   │   │   │               ├── domain
+│   │   │   │               │   ├── Admin.java
+│   │   │   │               │   ├── Collect.java
+│   │   │   │               │   ├── Comment.java
+│   │   │   │               │   ├── Consumer.java
+│   │   │   │               │   ├── ListSong.java
+│   │   │   │               │   ├── Rank.java
+│   │   │   │               │   ├── Singer.java
+│   │   │   │               │   ├── Song.java
+│   │   │   │               │   └── SongList.java
+│   │   │   │               ├── MusicApplication.java
+│   │   │   │               ├── service
+│   │   │   │               │   ├── AdminService.java
+│   │   │   │               │   ├── CollectService.java
+│   │   │   │               │   ├── CommentService.java
+│   │   │   │               │   ├── ConsumerService.java
+│   │   │   │               │   ├── impl
+│   │   │   │               │   │   ├── AdminServiceImpl.java
+│   │   │   │               │   │   ├── CollectServiceImpl.java
+│   │   │   │               │   │   ├── CommentServiceImpl.java
+│   │   │   │               │   │   ├── ConsumerServiceImpl.java
+│   │   │   │               │   │   ├── ListSongServiceImpl.java
+│   │   │   │               │   │   ├── RankServiceImpl.java
+│   │   │   │               │   │   ├── SingerServiceImpl.java
+│   │   │   │               │   │   ├── SongListServiceImpl.java
+│   │   │   │               │   │   └── SongServiceImpl.java
+│   │   │   │               │   ├── ListSongService.java
+│   │   │   │               │   ├── RankService.java
+│   │   │   │               │   ├── SingerService.java
+│   │   │   │               │   ├── SongListService.java
+│   │   │   │               │   └── SongService.java
+│   │   │   │               └── utils
+│   │   │   │                   └── Consts.java
+│   │   │   └── resources
+│   │   │       ├── application.properties
+│   │   │       └── mapper
+│   │   │           ├── AdminMapper.xml
+│   │   │           ├── CollectMapper.xml
+│   │   │           ├── CommentMapper.xml
+│   │   │           ├── ConsumerMapper.xml
+│   │   │           ├── ListSongMapper.xml
+│   │   │           ├── RankMapper.xml
+│   │   │           ├── SingerMapper.xml
+│   │   │           ├── SongListMapper.xml
+│   │   │           └── SongMapper.xml
+│   │   └── test
+│   │       └── java
+│   │           └── com
+│   │               └── javaclimb
+│   │                   └── music
+│   │                       └── MusicApplicationTests.java
+│   └── target
+│       ├── classes
+│       │   ├── application.properties
+│       │   ├── com
+│       │   │   └── javaclimb
+│       │   │       └── music
+│       │   │           ├── config
+│       │   │           │   ├── FileConfig.class
+│       │   │           │   └── WebMvcConfig.class
+│       │   │           ├── controller
+│       │   │           │   ├── AdminController.class
+│       │   │           │   ├── CollectController.class
+│       │   │           │   ├── CommentController.class
+│       │   │           │   ├── ConsumerController.class
+│       │   │           │   ├── ListSongController.class
+│       │   │           │   ├── RankController.class
+│       │   │           │   ├── SingerController.class
+│       │   │           │   ├── SongController.class
+│       │   │           │   └── SongListController.class
+│       │   │           ├── dao
+│       │   │           │   ├── AdminMapper.class
+│       │   │           │   ├── CollectMapper.class
+│       │   │           │   ├── CommentMapper.class
+│       │   │           │   ├── ConsumerMapper.class
+│       │   │           │   ├── ListSongMapper.class
+│       │   │           │   ├── RankMapper.class
+│       │   │           │   ├── SingerMapper.class
+│       │   │           │   ├── SongListMapper.class
+│       │   │           │   └── SongMapper.class
+│       │   │           ├── domain
+│       │   │           │   ├── Admin.class
+│       │   │           │   ├── Collect.class
+│       │   │           │   ├── Comment.class
+│       │   │           │   ├── Consumer.class
+│       │   │           │   ├── ListSong.class
+│       │   │           │   ├── Rank.class
+│       │   │           │   ├── Singer.class
+│       │   │           │   ├── Song.class
+│       │   │           │   └── SongList.class
+│       │   │           ├── MusicApplication.class
+│       │   │           ├── service
+│       │   │           │   ├── AdminService.class
+│       │   │           │   ├── CollectService.class
+│       │   │           │   ├── CommentService.class
+│       │   │           │   ├── ConsumerService.class
+│       │   │           │   ├── impl
+│       │   │           │   │   ├── AdminServiceImpl.class
+│       │   │           │   │   ├── CollectServiceImpl.class
+│       │   │           │   │   ├── CommentServiceImpl.class
+│       │   │           │   │   ├── ConsumerServiceImpl.class
+│       │   │           │   │   ├── ListSongServiceImpl.class
+│       │   │           │   │   ├── RankServiceImpl.class
+│       │   │           │   │   ├── SingerServiceImpl.class
+│       │   │           │   │   ├── SongListServiceImpl.class
+│       │   │           │   │   └── SongServiceImpl.class
+│       │   │           │   ├── ListSongService.class
+│       │   │           │   ├── RankService.class
+│       │   │           │   ├── SingerService.class
+│       │   │           │   ├── SongListService.class
+│       │   │           │   └── SongService.class
+│       │   │           └── utils
+│       │   │               └── Consts.class
+│       │   ├── mapper
+│       │   │   ├── AdminMapper.xml
+│       │   │   ├── CollectMapper.xml
+│       │   │   ├── CommentMapper.xml
+│       │   │   ├── ConsumerMapper.xml
+│       │   │   ├── ListSongMapper.xml
+│       │   │   ├── RankMapper.xml
+│       │   │   ├── SingerMapper.xml
+│       │   │   ├── SongListMapper.xml
+│       │   │   └── SongMapper.xml
+│       │   └── META-INF
+│       │       └── music.kotlin_module
+│       ├── generated-sources
+│       │   └── annotations
+│       ├── generated-test-sources
+│       │   └── test-annotations
+│       └── test-classes
+│           └── com
+│               └── javaclimb
+│                   └── music
+│                       └── MusicApplicationTests.class
+├── README.md
+└── tree.txt
+
+94 directories, 304 files
