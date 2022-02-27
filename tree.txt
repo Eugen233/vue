@@ -1,4 +1,7 @@
 .
+├── doc
+│   ├── class.doc
+│   └── report.docx
 ├── LICENSE
 ├── music-client
 │   ├── build
@@ -118,7 +121,6 @@
 │   │       ├── index.js
 │   │       ├── song.js
 │   │       └── user.js
-│   ├── static
 │   └── test
 │       ├── e2e
 │       │   ├── custom-assertions
@@ -207,7 +209,6 @@
 │   │   ├── 1599695045249╗¬╫╨.jpg
 │   │   ├── 16015143342196.jpg
 │   │   └── 1601515066460╕⌐╬╘│┼.jpg
-│   ├── HELP.md
 │   ├── img
 │   │   ├── singerPic
 │   │   │   ├── 1598707156005╗¬╫╨.jpg
@@ -224,7 +225,6 @@
 │   │   │   ├── 1599231150357│┬▐╚╤╕.jpg
 │   │   │   └── tubiao.jpg
 │   │   └── user.jpg
-│   ├── music.iml
 │   ├── mvnw
 │   ├── mvnw.cmd
 │   ├── pom.xml
@@ -232,170 +232,113 @@
 │   │   ├── 1599134158136╘┬╤└╢∙.mp3
 │   │   ├── 1599231114624╩«─Ω.mp3
 │   │   └── 1601387923463╨╟╨╟.mp3
-│   ├── src
-│   │   ├── main
-│   │   │   ├── java
-│   │   │   │   └── com
-│   │   │   │       └── javaclimb
-│   │   │   │           └── music
-│   │   │   │               ├── config
-│   │   │   │               │   ├── FileConfig.java
-│   │   │   │               │   └── WebMvcConfig.java
-│   │   │   │               ├── controller
-│   │   │   │               │   ├── AdminController.java
-│   │   │   │               │   ├── CollectController.java
-│   │   │   │               │   ├── CommentController.java
-│   │   │   │               │   ├── ConsumerController.java
-│   │   │   │               │   ├── ListSongController.java
-│   │   │   │               │   ├── RankController.java
-│   │   │   │               │   ├── SingerController.java
-│   │   │   │               │   ├── SongController.java
-│   │   │   │               │   └── SongListController.java
-│   │   │   │               ├── dao
-│   │   │   │               │   ├── AdminMapper.java
-│   │   │   │               │   ├── CollectMapper.java
-│   │   │   │               │   ├── CommentMapper.java
-│   │   │   │               │   ├── ConsumerMapper.java
-│   │   │   │               │   ├── ListSongMapper.java
-│   │   │   │               │   ├── RankMapper.java
-│   │   │   │               │   ├── SingerMapper.java
-│   │   │   │               │   ├── SongListMapper.java
-│   │   │   │               │   └── SongMapper.java
-│   │   │   │               ├── domain
-│   │   │   │               │   ├── Admin.java
-│   │   │   │               │   ├── Collect.java
-│   │   │   │               │   ├── Comment.java
-│   │   │   │               │   ├── Consumer.java
-│   │   │   │               │   ├── ListSong.java
-│   │   │   │               │   ├── Rank.java
-│   │   │   │               │   ├── Singer.java
-│   │   │   │               │   ├── Song.java
-│   │   │   │               │   └── SongList.java
-│   │   │   │               ├── MusicApplication.java
-│   │   │   │               ├── service
-│   │   │   │               │   ├── AdminService.java
-│   │   │   │               │   ├── CollectService.java
-│   │   │   │               │   ├── CommentService.java
-│   │   │   │               │   ├── ConsumerService.java
-│   │   │   │               │   ├── impl
-│   │   │   │               │   │   ├── AdminServiceImpl.java
-│   │   │   │               │   │   ├── CollectServiceImpl.java
-│   │   │   │               │   │   ├── CommentServiceImpl.java
-│   │   │   │               │   │   ├── ConsumerServiceImpl.java
-│   │   │   │               │   │   ├── ListSongServiceImpl.java
-│   │   │   │               │   │   ├── RankServiceImpl.java
-│   │   │   │               │   │   ├── SingerServiceImpl.java
-│   │   │   │               │   │   ├── SongListServiceImpl.java
-│   │   │   │               │   │   └── SongServiceImpl.java
-│   │   │   │               │   ├── ListSongService.java
-│   │   │   │               │   ├── RankService.java
-│   │   │   │               │   ├── SingerService.java
-│   │   │   │               │   ├── SongListService.java
-│   │   │   │               │   └── SongService.java
-│   │   │   │               └── utils
-│   │   │   │                   └── Consts.java
-│   │   │   └── resources
-│   │   │       ├── application.properties
-│   │   │       └── mapper
-│   │   │           ├── AdminMapper.xml
-│   │   │           ├── CollectMapper.xml
-│   │   │           ├── CommentMapper.xml
-│   │   │           ├── ConsumerMapper.xml
-│   │   │           ├── ListSongMapper.xml
-│   │   │           ├── RankMapper.xml
-│   │   │           ├── SingerMapper.xml
-│   │   │           ├── SongListMapper.xml
-│   │   │           └── SongMapper.xml
-│   │   └── test
-│   │       └── java
-│   │           └── com
-│   │               └── javaclimb
-│   │                   └── music
-│   │                       └── MusicApplicationTests.java
-│   └── target
-│       ├── classes
-│       │   ├── application.properties
-│       │   ├── com
-│       │   │   └── javaclimb
-│       │   │       └── music
-│       │   │           ├── config
-│       │   │           │   ├── FileConfig.class
-│       │   │           │   └── WebMvcConfig.class
-│       │   │           ├── controller
-│       │   │           │   ├── AdminController.class
-│       │   │           │   ├── CollectController.class
-│       │   │           │   ├── CommentController.class
-│       │   │           │   ├── ConsumerController.class
-│       │   │           │   ├── ListSongController.class
-│       │   │           │   ├── RankController.class
-│       │   │           │   ├── SingerController.class
-│       │   │           │   ├── SongController.class
-│       │   │           │   └── SongListController.class
-│       │   │           ├── dao
-│       │   │           │   ├── AdminMapper.class
-│       │   │           │   ├── CollectMapper.class
-│       │   │           │   ├── CommentMapper.class
-│       │   │           │   ├── ConsumerMapper.class
-│       │   │           │   ├── ListSongMapper.class
-│       │   │           │   ├── RankMapper.class
-│       │   │           │   ├── SingerMapper.class
-│       │   │           │   ├── SongListMapper.class
-│       │   │           │   └── SongMapper.class
-│       │   │           ├── domain
-│       │   │           │   ├── Admin.class
-│       │   │           │   ├── Collect.class
-│       │   │           │   ├── Comment.class
-│       │   │           │   ├── Consumer.class
-│       │   │           │   ├── ListSong.class
-│       │   │           │   ├── Rank.class
-│       │   │           │   ├── Singer.class
-│       │   │           │   ├── Song.class
-│       │   │           │   └── SongList.class
-│       │   │           ├── MusicApplication.class
-│       │   │           ├── service
-│       │   │           │   ├── AdminService.class
-│       │   │           │   ├── CollectService.class
-│       │   │           │   ├── CommentService.class
-│       │   │           │   ├── ConsumerService.class
-│       │   │           │   ├── impl
-│       │   │           │   │   ├── AdminServiceImpl.class
-│       │   │           │   │   ├── CollectServiceImpl.class
-│       │   │           │   │   ├── CommentServiceImpl.class
-│       │   │           │   │   ├── ConsumerServiceImpl.class
-│       │   │           │   │   ├── ListSongServiceImpl.class
-│       │   │           │   │   ├── RankServiceImpl.class
-│       │   │           │   │   ├── SingerServiceImpl.class
-│       │   │           │   │   ├── SongListServiceImpl.class
-│       │   │           │   │   └── SongServiceImpl.class
-│       │   │           │   ├── ListSongService.class
-│       │   │           │   ├── RankService.class
-│       │   │           │   ├── SingerService.class
-│       │   │           │   ├── SongListService.class
-│       │   │           │   └── SongService.class
-│       │   │           └── utils
-│       │   │               └── Consts.class
-│       │   ├── mapper
-│       │   │   ├── AdminMapper.xml
-│       │   │   ├── CollectMapper.xml
-│       │   │   ├── CommentMapper.xml
-│       │   │   ├── ConsumerMapper.xml
-│       │   │   ├── ListSongMapper.xml
-│       │   │   ├── RankMapper.xml
-│       │   │   ├── SingerMapper.xml
-│       │   │   ├── SongListMapper.xml
-│       │   │   └── SongMapper.xml
-│       │   └── META-INF
-│       │       └── music.kotlin_module
-│       ├── generated-sources
-│       │   └── annotations
-│       ├── generated-test-sources
-│       │   └── test-annotations
-│       └── test-classes
-│           └── com
-│               └── javaclimb
-│                   └── music
-│                       └── MusicApplicationTests.class
+│   └── src
+│       ├── main
+│       │   ├── java
+│       │   │   └── com
+│       │   │       └── javaclimb
+│       │   │           └── music
+│       │   │               ├── config
+│       │   │               │   ├── FileConfig.java
+│       │   │               │   └── WebMvcConfig.java
+│       │   │               ├── controller
+│       │   │               │   ├── AdminController.java
+│       │   │               │   ├── CollectController.java
+│       │   │               │   ├── CommentController.java
+│       │   │               │   ├── ConsumerController.java
+│       │   │               │   ├── ListSongController.java
+│       │   │               │   ├── RankController.java
+│       │   │               │   ├── SingerController.java
+│       │   │               │   ├── SongController.java
+│       │   │               │   └── SongListController.java
+│       │   │               ├── dao
+│       │   │               │   ├── AdminMapper.java
+│       │   │               │   ├── CollectMapper.java
+│       │   │               │   ├── CommentMapper.java
+│       │   │               │   ├── ConsumerMapper.java
+│       │   │               │   ├── ListSongMapper.java
+│       │   │               │   ├── RankMapper.java
+│       │   │               │   ├── SingerMapper.java
+│       │   │               │   ├── SongListMapper.java
+│       │   │               │   └── SongMapper.java
+│       │   │               ├── domain
+│       │   │               │   ├── Admin.java
+│       │   │               │   ├── Collect.java
+│       │   │               │   ├── Comment.java
+│       │   │               │   ├── Consumer.java
+│       │   │               │   ├── ListSong.java
+│       │   │               │   ├── Rank.java
+│       │   │               │   ├── Singer.java
+│       │   │               │   ├── Song.java
+│       │   │               │   └── SongList.java
+│       │   │               ├── MusicApplication.java
+│       │   │               ├── service
+│       │   │               │   ├── AdminService.java
+│       │   │               │   ├── CollectService.java
+│       │   │               │   ├── CommentService.java
+│       │   │               │   ├── ConsumerService.java
+│       │   │               │   ├── impl
+│       │   │               │   │   ├── AdminServiceImpl.java
+│       │   │               │   │   ├── CollectServiceImpl.java
+│       │   │               │   │   ├── CommentServiceImpl.java
+│       │   │               │   │   ├── ConsumerServiceImpl.java
+│       │   │               │   │   ├── ListSongServiceImpl.java
+│       │   │               │   │   ├── RankServiceImpl.java
+│       │   │               │   │   ├── SingerServiceImpl.java
+│       │   │               │   │   ├── SongListServiceImpl.java
+│       │   │               │   │   └── SongServiceImpl.java
+│       │   │               │   ├── ListSongService.java
+│       │   │               │   ├── RankService.java
+│       │   │               │   ├── SingerService.java
+│       │   │               │   ├── SongListService.java
+│       │   │               │   └── SongService.java
+│       │   │               └── utils
+│       │   │                   └── Consts.java
+│       │   └── resources
+│       │       ├── application.properties
+│       │       └── mapper
+│       │           ├── AdminMapper.xml
+│       │           ├── CollectMapper.xml
+│       │           ├── CommentMapper.xml
+│       │           ├── ConsumerMapper.xml
+│       │           ├── ListSongMapper.xml
+│       │           ├── RankMapper.xml
+│       │           ├── SingerMapper.xml
+│       │           ├── SongListMapper.xml
+│       │           └── SongMapper.xml
+│       └── test
+│           └── java
+│               └── com
+│                   └── javaclimb
+│                       └── music
+│                           └── MusicApplicationTests.java
 ├── README.md
+├── screen
+│   ├── 1推荐页面.png
+│   ├── 2歌手详情.png
+│   ├── 3个人信息页面注册.png
+│   ├── 3个人信息hover (1).png
+│   ├── 3个人信息hover.png
+│   ├── 3个人信息.png
+│   ├── 4歌词1.png
+│   ├── 4歌词2.png
+│   ├── 5歌曲详情1.png
+│   ├── 5歌曲详情2.png
+│   ├── 6我的收藏.png
+│   ├── 7全部歌单.png
+│   ├── 8全部歌手1.png
+│   ├── 8全部歌手2.png
+│   ├── 歌词4.png
+│   ├── 歌曲详情5.png
+│   ├── 歌手页2.png
+│   ├── 个人3 (1).png
+│   ├── 个人3 (2).png
+│   ├── 个人3.png
+│   ├── 功能流程.png
+│   ├── 全部歌单7.png
+│   ├── 全部歌手8.png
+│   ├── 首页1.png
+│   └── 我的收藏6.png
 └── tree.txt
 
-94 directories, 304 files
+73 directories, 268 files
